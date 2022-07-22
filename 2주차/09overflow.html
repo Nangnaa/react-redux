@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent{
+      width: 200px;
+      height: 150px;
+      background-color: royalblue;
+      margin: 20px;
+      padding:20px;
+      overflow: scroll;
+      /* 가로가 넘쳐서 스크롤바 생성  */
+      /* overflow: auto; */
+      /* 넘친부분만 자동으로 스크롤바 생성할수있게 */
+      /* overflow: hidden; */
+    }
+    .child{
+      width: 300px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

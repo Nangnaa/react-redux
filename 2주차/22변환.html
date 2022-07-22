@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform</title>
+  <style>
+    .container{
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+    }
+    .item{
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      /* transform: rotate(45deg) scale(1.3); */
+      /* transform 변환함수 */
+      /* rotate(45deg) 오른쪽으로 45도만큼 회전 */
+      /* scale(1.3) 요소가 1.3배 커짐 */
+      transform: scale(0.5);
+ 
+    }
+    .item:hover{
+      width: 200px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">AB</div>
+  </div>
+</body>
+</html>

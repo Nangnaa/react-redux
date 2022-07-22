@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //함수 선언
+    function hellofunc(){
+      //실행코드
+      console.log(1234);
+    }
+
+    //함수호출
+    hellofunc(); //1234
+
+    function returnFunc(){
+      return 123; //내보내지면 
+    }
+    let c= returnFunc(); 
+    //추가적으로 할당해 사용이가능
+    //호출은 실행이된다는것
+    console.log(c); //123
+
+    //함수 선언
+    function sum(a,b){//a와 b는 매개변수(parameters)
+      return a+b;
+    }
+    //재사용
+    let a = sum(1,2); //1과2는 인수
+    let b = sum(7,12);
+    let d = sum(2,4);
+    console.log(a,b,d); //3,19,6
+
+    //기명(이름이 있는 )함수
+    //함수선언
+    function hello(){
+      console.log('hello!');
+    }
+
+    //익명(이름이없는)함수
+    //함수표현
+    //데이터로 표현
+    let world = function(){
+      console.log('world');
+    }
+
+    //함수 호출!
+    hello(); //hello!
+    world(); //world
+
+    //객체 데이터
+    const heropy ={
+      name:'HEROPY',
+      age:85,
+      //메소드(method)속성부분에 함수를 할당
+      getName: function(){
+        return this.name; //반환
+        //this는 name을 반환한다
+        //heropy안에있는 데이터 name을 가져온다
+      }
+    };
+
+    const hisName = heropy.getName(); //호출(실행)
+    console.log(hisName); //HEROPY
+    //혹은
+    console.log(heropy.getName); //HEROPY
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

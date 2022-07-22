@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  html{
+     font-size: 16px;  
+    /*기본사이즈*/
+  }
+  .parent{
+    width: 300px;
+    height: 200px;
+    background-color: royalblue;
+    /* font-size: 10px; */
+  }
+  .child{
+    /* width: 100%; */
+    /* width: 50%; */
+    /* %는 기준이 달라질수있다 지금은 부모요소의 영향을받음 */
+    /* width: 10em;  */
+    /* 기본적인 폰트사이즈 16px에 *10을한 값160px 
+    20em 일경우320px 부모나 조상요소의 값을 따라간다 관리가 필요*/
+    /* width: 20rem; */
+    /* html(루트)의 요소의 폰트사이즈를 따르기때문에 크기가 달라지지않음
+      html의 폰트사이즈를 바꾼다면 모든 rem을 제어가능
+    */
+    /* width: 50vw; */
+    /* 뷰포트의 가로너비 */
+    
+    /* height: 50vh; */
+        /* 뷰포트의 세로 너비의 절반만 사용 
+        100vh는 뷰포트의 전체를 사용 */
+
+    height: 50%;
+    background-color: orange;
+}
+</style>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">Box!!</div>
+
+  <script>
+    //HTML요소(Element) 검색/찾기 찾으면boxEl 에 넣기
+    const boxEl = document.querySelector('.box');
+
+    //요소의 클래스 정보 객체 활용
+    boxEl.classList.add('active'); 
+    //add라는 매소드 사용가능 
+    //active라는 문자데이터 클래스를 추가
+    // boxEl 클래스요소(classList)에 add(추가) active를 추가
+    let isContains = boxEl.classList.contains('active');
+    //boxEl이라는 클래스가 포함(contains)되어있니 active가 있는지 없는지 체크 
+    console.log(isContains); //true
+    
+    boxEl.classList.remove('active');
+    //boxEl이라는 클래스(classList)에 active라는 문자데이터를 remove(삭제)
+
+    isContains = boxEl.classList.contains('active');
+    //boxEl이라는 클래스(classList)에 active가 포함(contains)이 되어있는지 체크
+    console.log(isContains); //false
+
+  </script>
+</body>
+</html>

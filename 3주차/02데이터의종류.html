@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //String(문자데이터)
+    //따옴표를 사용합니다
+    let myName= "cheongwoo";
+    let email = 'thesecon@gmail.com';
+    let hello = `hello ${myName}?!`
+    // `` 백틱기호사이에 ${} 보간법(추가적인 데이터)
+
+    console.log(myName);// cheongwoo
+    console.log(email);//thesecon@gmail.com
+    console.log(hello);// hello cheongwoo?!
+
+    //Number(숫자데이터)
+    //정수 및 부동소수점 숫자를 나타냅니다
+    let number = 123;
+    // 따옴표로 묶이면 문자데이터
+    let opacity = 1.57;
+    console.log(number);//123
+    console.log(opacity);//1.57
+
+    //Boolean(불린데이터)
+    //true, false 두가지 값밖에 없는 논리 데이터
+    let checked = true;
+    let isShow = false;
+    console.log(checked);//true
+    console.log(isShow); //false
+
+    // Undefined
+    //값이 할당되지 않은 상태를 나타냅니다.
+    let undef;
+    let obj = {abc: 123};
+            // 속성안에 숫자 123을 집어넣음
+
+    console.log(undef); //undefined 
+    console.log(obj.abc);//123
+    // obj에 들어가서  abc 하나의 속성에 들어가서 값이 무엇입니까
+
+    console.log(obj.xyz); //undefined 값이 없다
+
+    //Null
+    //어떤 값이 의도적으로 비어있음을 의미합니다
+    let empty = null;
+    //일부러 집어넣음(명시적)
+    console.log(empty); //null
+
+    //Object(객체 데이터)
+    //여러 데이터를 Key:Value 형태로 저장합니다. { }
+    let user = {
+      //Key : Value,
+      name:'HEROPY',
+      age: 85,
+      isValid:true
+    };
+    console.log(user.name); //HEROPY
+    console.log(user.age); //85
+    console.log(user.isValid); //true
+
+    //Array (배열데이터)
+    //여러 데이터를 순차적으로 저장합니다 대괄호사용
+    let fruit = [ 'apple', 'banana', 'cherry']
+    console.log(fruit[0]);//apple 
+    console.log(fruit[1]);//banana
+    console.log(fruit[2]);//cherry
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

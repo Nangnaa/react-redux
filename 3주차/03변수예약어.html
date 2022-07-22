@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // let
+    //재사용이 가능
+    //변수 선언!
+    //값(데이터)의 재할당 가능!
+    let a = 2;
+    let b = 5;
+    console.log(a+b); //7
+    console.log(a-b);//-3
+    console.log(a*b);//10
+    console.log(a/b);//0.4
+
+
+    let c = 12;
+    console.log(c); //12
+    c= 999;
+    console.log(c); //999
+    
+    //const
+    //값(데이터의 재할당 불가)
+    const d = 12;
+    console.log(d); //12
+    
+    d=999;
+    console.log(d); //TypeError: ~~ 
+
+    //const를 주로 사용하고 재할당이 필요할겨우 let을 사용
+
+    //예약어
+    //특별한의미를 가지고있어 변수나 함수이름등으로 사용할수없는단어
+    // Reserved Word
+
+    let this = 'hello'; //syntaxError
+    let if = 123;//syntaxError
+    let break = true; //syntaxError 문법에러
+    
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
